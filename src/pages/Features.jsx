@@ -12,21 +12,18 @@ export default function Features() {
   return (
     <div className="min-h-screen pt-20 sm:pt-24">
       {/* Hero */}
-      <section className="py-10 sm:py-12 md:py-16 lg:py-20">
+      <section className="py-6 sm:py-8 md:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <span className="text-brand text-xs sm:text-sm font-semibold uppercase tracking-wider">
-              Complete Interview Suite
-            </span>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold mt-3 sm:mt-4 mb-6 sm:mb-8 text-heading">
-              Designed for Scalable Interview Preparation in Colleges
-            </h1>
-            <BlurReveal
-              text="AI-Led Mock Interviews at Scale"
-              className="text-base sm:text-lg md:text-xl text-brand font-semibold mb-4"
-              delay={0.2}
+            <MorphingText
+              words={["Designed for Scalable Interview Preparation in Colleges"]}
+              className="text-4xl sm:text-4xl md:text-4xl lg:text-4xl font-serif font-bold text-black mb-4 sm:mb-6"
             />
-            <div className="max-w-3xl mx-auto">
+            <MorphingText
+              words={["AI-Led Mock Interviews at Scale"]}
+              className="text-4xl sm:text-4xl md:text-4xl lg:text-4xl font-serif font-bold text-brand mb-4 sm:mb-6"
+            />
+            <div className="max-w-5xl mx-auto text justify-center text-body-text/70 text-sm sm:text-base">
               <p className="text-sm sm:text-base text-body-text/70 mb-3 sm:mb-4">
                 Students practice interviews with an AI interviewer that asks
                 relevant questions, evaluates responses, and provides
@@ -43,22 +40,8 @@ export default function Features() {
       </section>
 
       {/* System Flow */}
-      <section className="py-10 sm:py-12 md:py-16 lg:py-20 bg-black/30">
+      <section className="py-6 sm:py-8 md:py-10 bg-black/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection className="text-center mb-10 sm:mb-16">
-            <span className="text-brand text-xs sm:text-sm font-semibold uppercase tracking-wider">
-              Core Features
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mt-3 sm:mt-4 mb-4 sm:mb-6 text-heading">
-              <SpotlightText
-                text="Designed for Scalable Interview Preparation"
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold"
-                spotlightSize={180}
-                litColor="#509DD0"
-                dimColor="rgba(26, 42, 53, 0.7)"
-              />
-            </h2>
-          </AnimatedSection>
 
           <div className="space-y-6 sm:space-y-8">
             {/* Realistic Interview Simulation */}
@@ -191,10 +174,10 @@ export default function Features() {
       </section>
 
       {/* How It Works */}
-      <section className="py-10 sm:py-12 md:py-16 lg:py-20">
+      <section className="py-6 sm:py-8 md:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-10 sm:mb-16">
-            <span className="text-brand text-xs sm:text-sm font-semibold uppercase tracking-wider">
+            <span className="text-brand text-base sm:text-lg font-semibold uppercase tracking-wider">
               Why Aarovan.ai
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mt-3 sm:mt-4 mb-4 sm:mb-6 text-heading">
@@ -202,7 +185,7 @@ export default function Features() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10">
             {[
               {
                 icon: "groups",
@@ -243,11 +226,21 @@ export default function Features() {
               </AnimatedSection>
             ))}
           </div>
+          
+          <AnimatedSection delay={0.5}>
+            <div className="relative h-64 sm:h-80 rounded-2xl overflow-hidden border border-brand/30">
+              <img
+                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80"
+                alt="AI-powered interview platform"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-10 sm:py-12 md:py-16 lg:py-20 bg-black/30">
+      <section className="py-6 sm:py-8 md:py-10 bg-black/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 sm:mb-8 text-heading">

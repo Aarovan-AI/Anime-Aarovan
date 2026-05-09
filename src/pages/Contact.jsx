@@ -46,7 +46,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen pt-20 sm:pt-24">
       {/* Hero */}
-      <section className="py-10 sm:py-12 md:py-16 lg:py-20">
+      <section className="pt-4 pb-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold mb-4 sm:mb-6 text-heading">
@@ -61,12 +61,12 @@ export default function Contact() {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-10 sm:py-12 md:py-16 lg:py-20">
+      <section className="pt-2 pb-6 sm:pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
             {/* Contact Form */}
             <AnimatedSection>
-              <div className="glass-card rounded-2xl p-6 sm:p-8 md:p-10">
+              <div className="glass-card rounded-2xl p-6 sm:p-8 md:p-10 h-full">
                 <h2 className="text-xl sm:text-2xl font-serif font-bold text-heading mb-4 sm:mb-6">
                   Send us a message
                 </h2>
@@ -193,6 +193,15 @@ export default function Contact() {
             {/* Contact Information */}
             <AnimatedSection delay={0.2}>
               <div className="space-y-6 sm:space-y-8">
+                {/* Visual Element */}
+                <div className="relative h-48 rounded-2xl overflow-hidden border border-brand/30">
+                  <img
+                    src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=800&q=80"
+                    alt="Professional communication"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                
                 <div className="glass-card rounded-2xl p-6 sm:p-8">
                   <h3 className="text-lg sm:text-xl font-semibold text-heading mb-4 sm:mb-6">
                     Contact Information
@@ -208,10 +217,10 @@ export default function Contact() {
                           Email
                         </p>
                         <a
-                          href="mailto:contact@aarovan.ai"
+                          href="mailto:aarovan.ai@gmail.com"
                           className="text-heading text-sm sm:text-base hover:text-brand transition-colors break-all"
                         >
-                          contact@aarovan.ai
+                          aarovan.ai@gmail.com
                         </a>
                       </div>
                     </div>
@@ -242,48 +251,12 @@ export default function Contact() {
                           Address
                         </p>
                         <p className="text-heading text-sm sm:text-base">
-                          Bangalore, Karnataka
+                          Delhi,
                           <br />
                           India
                         </p>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <div className="glass-card rounded-2xl p-6 sm:p-8">
-                  <h3 className="text-lg sm:text-xl font-semibold text-heading mb-4 sm:mb-6">
-                    Connect With Us
-                  </h3>
-
-                  <div className="flex space-x-3 sm:space-x-4">
-                    <a
-                      href="#"
-                      className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-border/20 flex items-center justify-center hover:bg-brand/20 hover:border-brand transition-all"
-                      aria-label="LinkedIn"
-                    >
-                      <span className="material-symbols-outlined text-heading text-xl sm:text-2xl">
-                        link
-                      </span>
-                    </a>
-                    <a
-                      href="#"
-                      className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-border/20 flex items-center justify-center hover:bg-brand/20 hover:border-brand transition-all"
-                      aria-label="Twitter"
-                    >
-                      <span className="material-symbols-outlined text-heading text-xl sm:text-2xl">
-                        tag
-                      </span>
-                    </a>
-                    <a
-                      href="#"
-                      className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-border/20 flex items-center justify-center hover:bg-brand/20 hover:border-brand transition-all"
-                      aria-label="Instagram"
-                    >
-                      <span className="material-symbols-outlined text-heading text-xl sm:text-2xl">
-                        photo_camera
-                      </span>
-                    </a>
                   </div>
                 </div>
 
@@ -300,11 +273,49 @@ export default function Contact() {
               </div>
             </AnimatedSection>
           </div>
+
+          {/* Connect With Us - full width below */}
+          <AnimatedSection delay={0.3}>
+            <div className="glass-card rounded-2xl p-6 sm:p-8 mt-8 sm:mt-10 lg:mt-12">
+              <h3 className="text-lg sm:text-xl font-semibold text-heading mb-4 sm:mb-6 text-center">
+                Connect With Us
+              </h3>
+              <div className="flex justify-center space-x-4 sm:space-x-6">
+                <a
+                  href="#"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-brand/20 to-navy/20 border border-brand/30 flex items-center justify-center hover:scale-110 hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 group"
+                  aria-label="LinkedIn"
+                >
+                  <span className="material-symbols-outlined text-brand text-xl sm:text-2xl group-hover:text-white transition-colors">
+                    work
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-brand/20 to-navy/20 border border-brand/30 flex items-center justify-center hover:scale-110 hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 group"
+                  aria-label="Twitter"
+                >
+                  <span className="material-symbols-outlined text-brand text-xl sm:text-2xl group-hover:text-white transition-colors">
+                    chat
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-brand/20 to-navy/20 border border-brand/30 flex items-center justify-center hover:scale-110 hover:shadow-lg hover:shadow-brand/30 transition-all duration-300 group"
+                  aria-label="Instagram"
+                >
+                  <span className="material-symbols-outlined text-brand text-xl sm:text-2xl group-hover:text-white transition-colors">
+                    photo_camera
+                  </span>
+                </a>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* FAQ Quick Links */}
-      <section className="py-10 sm:py-12 md:py-16 lg:py-20 bg-black/30">
+      <section className="py-6 sm:py-8 md:py-10 bg-black/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4 sm:mb-6 text-white">

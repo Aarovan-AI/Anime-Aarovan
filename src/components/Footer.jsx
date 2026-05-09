@@ -98,14 +98,14 @@ export default function Footer() {
                 className="text-white/70 hover:text-brand transition-colors"
                 aria-label="LinkedIn"
               >
-                <span className="material-symbols-outlined text-2xl">link</span>
+                <span className="material-symbols-outlined text-2xl">work</span>
               </a>
               <a
                 href="#"
                 className="text-white/70 hover:text-brand transition-colors"
                 aria-label="Twitter"
               >
-                <span className="material-symbols-outlined text-2xl">tag</span>
+                <span className="material-symbols-outlined text-2xl">chat</span>
               </a>
               <a
                 href="#"

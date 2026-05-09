@@ -33,26 +33,13 @@ export const MorphingText = ({
   }, [displayWord]);
 
   return (
-    <motion.span
-      className={`inline-flex relative align-baseline overflow-hidden ${className}`}
-      animate={{ width: width === "auto" ? undefined : width }}
-      transition={{
-        duration: morphDuration * 0.5,
-        ease: [0.25, 0.4, 0.25, 1]
-      }}
+    <motion.div
+      className={`inline-block relative align-baseline ${className}`}
     >
-      <span
-        ref={measureRef}
-        className="invisible absolute whitespace-nowrap"
-        aria-hidden
-      >
-        {displayWord}
-      </span>
-
       <AnimatePresence mode="wait">
-        <motion.span
+        <motion.div
           key={displayWord}
-          className="inline-flex whitespace-nowrap"
+          className="flex flex-wrap justify-center"
           initial="initial"
           animate="animate"
           exit="exit"
@@ -99,8 +86,8 @@ export const MorphingText = ({
               {char === " " ? "\u00A0" : char}
             </motion.span>
           ))}
-        </motion.span>
+        </motion.div>
       </AnimatePresence>
-    </motion.span>
+    </motion.div>
   );
 };
