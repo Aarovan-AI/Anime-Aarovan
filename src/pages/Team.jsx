@@ -78,7 +78,7 @@ export default function Team() {
       {/* Our Story */}
       <section className="py-6 sm:py-8 md:py-6 bg-black/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection className="text-center mb-8 sm:mb-12">
+          <AnimatedSection className="text-center mb-8">
             <span className="text-brand text-base sm:text-lg font-semibold uppercase tracking-wider">
               Our Story
             </span>
@@ -87,9 +87,12 @@ export default function Team() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols gap-8 items-stretch">
             <AnimatedSection delay={0.2}>
               <div className="glass-card rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 sm:space-y-6 h-full">
+                <h3 className="text-xl sm:text-2xl font-serif font-bold text-heading mb-4">
+                  How it all started
+                </h3>
                 <p className="text-sm sm:text-base text-body-text/70 leading-relaxed">
                   Aarovan.ai started when Avennya Goel, after her time at Babson,
                   worked with the founder of an engineering college and conducted
@@ -99,7 +102,7 @@ export default function Team() {
                   consistent interview practice.
                 </p>
                 <p className="text-sm sm:text-base text-body-text/70 leading-relaxed">
-                  To address this gap at scale, she partnered with her brother,
+                  To address this gap at scale, she partnered with
                   Rohan Garg, who brought a product and systems perspective to
                   design a scalable solution.
                 </p>
@@ -108,16 +111,6 @@ export default function Team() {
                   structured interview practice, consistent evaluation, and
                   continuous improvement across large student batches.
                 </p>
-              </div>
-            </AnimatedSection>
-            
-            <AnimatedSection delay={0.4}>
-              <div className="relative h-full min-h-[16rem] sm:min-h-[20rem] rounded-2xl overflow-hidden border border-brand/30">
-                <img
-                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80"
-                  alt="Business meeting and collaboration"
-                  className="w-full h-full object-cover"
-                />
               </div>
             </AnimatedSection>
           </div>
@@ -132,7 +125,7 @@ export default function Team() {
               Mentorship
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mt-3 sm:mt-4 text-heading">
-              Built with guidance from renowned AI faculty
+              Built with guidance from renowned <span className="gradient-text underline">AI faculty</span>
             </h2>
           </AnimatedSection>
 
